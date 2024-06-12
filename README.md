@@ -6,9 +6,10 @@ class Nitrix:
 
 class Attributes(Nitrix):
     @property
-    def contact(self) -> Tuple[str]:
+    def contact(self) -> Tuple[Tuple[str], Tuple[str]]:
         telegram = ("t.me/nitrixv3",)
-        return telegram
+        discord = ("voltuxcloud",)
+        return telegram, discord
 
     @property
     def life(self) -> Tuple[List[str], int]:
@@ -17,7 +18,7 @@ class Attributes(Nitrix):
         return langs, age
     
     @property
-    def coding(self) -> Tuple[Dict[str, List[str]], List[str], List[str], Dict[str]]:
+    def coding(self) -> Tuple[Dict[str, List[str]], List[str], List[str], Dict[str, Dict[str, Dict[str, str]]]]:
         langs = {
             'expert': ['c', 'python'],
             'intermediate': ['c++', 'js'],
@@ -35,5 +36,4 @@ class Attributes(Nitrix):
             }
         }
         return langs, specialities, ide, pc
-
 ```

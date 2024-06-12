@@ -1,3 +1,39 @@
-```math
-\ce{$&#x5C;unicode[goombafont; color:red; pointer-events: none; position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; z-index: 9999; object-fit: cover; background-size: cover; background-position: cover; width: 130vw; opacity: 1; background: url('https://raw.githubusercontent.com/peauth/sigma/main/Untitled.png');]{x0000}$}
+```python
+from typing import Tuple, List, Dict
+
+class Nitrix:
+    pass
+
+class Attributes(Nitrix):
+    @property
+    def contact(self) -> Tuple[str]:
+        telegram = ("t.me/nitrixv3",)
+        return telegram
+
+    @property
+    def life(self) -> Tuple[List[str], int]:
+        langs = ['English']
+        age = 15
+        return langs, age
+    
+    @property
+    def coding(self) -> Tuple[Dict[str, List[str]], List[str], List[str], Dict[str]]:
+        langs = {
+            'expert': ['c', 'python'],
+            'intermediate': ['c++', 'js'],
+            'learning': ['asm', 'java']
+        }
+        specialities = ['networking', 'fullstack']
+        ide = ['vscode']
+        pc = {
+            'Windows Desktop': {
+                'Custom': {
+                    'processor': 'i7-11700K',
+                    'ram': '16GB',
+                    'gpu': 'RTX 2070'
+                }
+            }
+        }
+        return langs, specialities, ide, pc
+
 ```

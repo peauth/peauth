@@ -22,7 +22,7 @@ class Attributes(Nitrix):
         langs = {
             'expert': ['c', 'python'],
             'intermediate': ['c++', 'js'],
-            'learning': ['asm', 'java']
+            'learning': ['go', 'java']
         }
         specialities = ['networking', 'fullstack']
         ide = ['vscode']

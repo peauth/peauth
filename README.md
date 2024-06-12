@@ -8,7 +8,7 @@ class Attributes(Nitrix):
     @property
     def contact(self) -> Tuple[Tuple[str], Tuple[str]]:
         telegram = ("t.me/nitrixv3",)
-        discord = ("voltuxcloud",)
+        discord = ("azgq",)
         return telegram, discord
 
     @property
